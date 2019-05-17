@@ -1,0 +1,28 @@
+{
+    "name": "kunstmaan/code-quality-config",
+    "type": "composer-plugin",
+    "description": "The default code quality configuration files for Kunstmaan projects.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jeroen Thora",
+            "email": "jeroen.thora@kunstmaan.be"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Kunstmaan\\CodeQuality\\": "src"
+        }
+    },
+    "require": {
+        "php": "^7.1",
+        "composer-plugin-api": "^1.1",
+        "symfony/filesystem": "^4.2"
+    },
+    "require-dev": {
+        "composer/composer": "^1.8"
+    },
+    "extra": {
+        "class": "Kunstmaan\\CodeQuality\\Composer\\Plugin"
+    }
+}

@@ -1,0 +1,6 @@
+<bg=blue;fg=white>                                                   </>
+<bg=blue;fg=white> Kunstmaan codestyle config successfully installed </>
+<bg=blue;fg=white>                                                   </>
+
+  * <fg=blue>Execute</> following command to install the required tools:
+    - <comment>composer require --dev friendsofphp/php-cs-fixer phpro/grumphp</comment>

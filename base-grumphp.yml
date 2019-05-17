@@ -1,0 +1,26 @@
+parameters:
+    ascii: ~
+    git_dir: .
+    bin_dir: vendor/bin
+    tasks:
+        composer: ~
+        git_blacklist:
+            keywords:
+                - "die("
+                - "die;"
+                - "var_dump("
+                - "exit;"
+                - "exit("
+                - "eval("
+                - "dump("
+                - "console.log("
+        npm_script:
+            script: test
+        git_commit_message:
+            enforce_capitalized_subject: false
+            max_subject_width: 0
+            matchers: "%convention.git_commit_message_matchers%"
+        phpcsfixer2:
+            config: .php_cs
+            config_contains_finder: true
+        yamllint: ~
