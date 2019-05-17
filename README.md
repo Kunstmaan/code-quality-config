@@ -27,8 +27,6 @@ return Kunstmaan\CodeQuality\PhpCsFixer\Config::fromFolders('src');
 
 You can also override rules per-project without overriding the core rules like this:
 
-**.php_cs**
-
 ```php
 <?php
 require 'vendor/autoload.php';
@@ -39,6 +37,8 @@ return Kunstmaan\CodeQuality\PhpCsFixer\Config::fromFolders(['src'])->mergeRules
 ```
 
 ### Grumphp
+
+**grumphp.yml**
 
 ```yaml
 imports:
