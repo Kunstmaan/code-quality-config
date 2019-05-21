@@ -3,7 +3,8 @@ parameters:
     git_dir: .
     bin_dir: vendor/bin
     tasks:
-        composer: ~
+        composer:
+            no_check_publish: true
         git_blacklist:
             keywords:
                 - "die("
