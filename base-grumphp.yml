@@ -15,6 +15,7 @@ parameters:
                 - "eval("
                 - "dump("
                 - "console.log("
+            triggered_by: ['php', 'twig']
         npm_script:
             script: test
         git_commit_message:
