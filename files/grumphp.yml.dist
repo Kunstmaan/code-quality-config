@@ -2,4 +2,4 @@ imports:
     - { resource: vendor/kunstmaan/code-quality-config/base-grumphp.yml }
 
 parameters:
-    convention.git_commit_message_matchers: { 'Must contain JIRA issue number': '/(^JIRA-\d+:|^\[no\-issue\]) [A-Z].+/' } #TODO: replace jira key or leave this parameter empty ([])
+    convention.git_commit_message_matchers: { 'Must contain JIRA issue number': '/(^JIRA-\d+:|^\[no\-issue\]|^Merge.branch) [A-Z].+/' } #TODO: replace jira key or leave this parameter empty ([])
