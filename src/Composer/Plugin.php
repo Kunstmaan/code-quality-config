@@ -62,4 +62,12 @@ class Plugin implements PluginInterface, EventSubscriberInterface
             $event->getIO()->write(file_get_contents(__DIR__ . '/post-install.txt'));
         }
     }
+
+    public function deactivate(Composer $composer, IOInterface $io)
+    {
+    }
+
+    public function uninstall(Composer $composer, IOInterface $io)
+    {
+    }
 }
